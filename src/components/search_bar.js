@@ -16,8 +16,8 @@ export class SearchBar extends React.Component{
         return(
           <div class="search-bar-form" >
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="text" name="searchTerms" {...searchTerms}/>
-                <input type="text" name="locationTerms" {...locationTerms}/>
+                <input type="text" name="searchTerms" placeholder="location" {...searchTerms}/>
+                <input type="text" name="locationTerms" placeholder="search terms" {...locationTerms}/>
                 <input type="submit"/>
             </form>
           </div>  
